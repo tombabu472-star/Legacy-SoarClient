@@ -60,7 +60,7 @@ public class Soar {
 	private WaypointManager waypointManager;
 	
 	public Soar() {
-		name = "Soar";
+		name = "Aztro";
 		version = "7.1.2";
 	}
 	

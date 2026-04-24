@@ -5,22 +5,22 @@ import org.apache.logging.log4j.Logger;
 
 public class SoarLogger {
 	
-    public static final Logger logger = LogManager.getLogger("Soar Client");
+    public static final Logger logger = LogManager.getLogger("Aztro Client");
     
     public static void info(String message) {
-    	logger.info("[SC/INFO] " + message);
+    	logger.info("[AZ/INFO] " + message);
     }
     
     public static void warn(String message) {
-    	logger.warn("[SC/WARN] " + message);
+    	logger.warn("[AZ/WARN] " + message);
     }
 
     public static void error(String message) {
-    	logger.error("[SC/ERROR] " + message);
+    	logger.error("[AZ/ERROR] " + message);
     }
     
     public static void error(String message, Exception e) {
-    	logger.error("[SC/ERROR] " + message, e);
+    	logger.error("[AZ/ERROR] " + message, e);
     }
 
 	public static Logger getLogger() {

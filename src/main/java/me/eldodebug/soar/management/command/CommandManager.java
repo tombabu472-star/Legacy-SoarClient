@@ -23,16 +23,17 @@ public class CommandManager {
 	@EventTarget
 	public void onSendChat(EventSendChat event) {
 		
-		if(event.getMessage().startsWith(".soarcmd")) {
+		if(event.getMessage().startsWith(".soarcmd") || event.getMessage().startsWith(".aztrocmd")) {
 			
 			event.setCancelled(true);
 			
 			String[] args = event.getMessage().split(" ");
+			String commandPrefix = event.getMessage().startsWith(".aztrocmd") ? ".aztrocmd " : ".soarcmd ";
 			
 			if(args.length > 1) {
 				for(Command c : commands) {
 					if(args[1].equals(c.getPrefix())) {
-						c.onCommand(event.getMessage().replace(".soarcmd ", "").replace(args[1] + " ", ""));
+						c.onCommand(event.getMessage().replace(commandPrefix, "").replace(args[1] + " ", ""));
 					}
 				}
 			}

@@ -239,7 +239,7 @@ public abstract class MixinMinecraft implements IMixinMinecraft {
     
 	@Redirect(method = "createDisplay", at = @At(value = "INVOKE", target = "Lorg/lwjgl/opengl/Display;setTitle(Ljava/lang/String;)V"))
 	public void overrideTitle(String title) {
-		Display.setTitle("Soar Client v" + Soar.getInstance().getVersion() + " for " + title);
+		Display.setTitle("Aztro Client v" + Soar.getInstance().getVersion() + " for " + title);
 	}
 	
     @Inject(method = "updateFramebufferSize", at = @At("HEAD"))

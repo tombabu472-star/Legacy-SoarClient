@@ -1,10 +1,10 @@
-<p align="center"><img src="/.github/Resources/logo.png" alt="Legacy SoarClient" title="Legacy SoarClient"></p>
+<p align="center"><img src="/.github/Resources/logo.png" alt="Legacy AztroClient" title="Legacy AztroClient"></p>
 The project is mainly aimed at being a modern and powerful PvP client developed by EldoDebug!
 
 ## How to launch
-Download SoarClient.zip from the release page and run start.bat
+Download AztroClient.zip from the release page and run start.bat
 
-## Has SoarClient development been discontinued?
+## Has AztroClient development been discontinued?
 Partially Yes, v8.0 is being developed, albeit very slowly  
 I went offline and open source to save on server costs.
 
